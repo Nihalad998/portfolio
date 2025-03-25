@@ -1,413 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nihal Adhikari | Web Developer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nihal Adhikari | Web Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Firebase SDK -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js" type="module"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-database-compat.js" type="module"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-compat.js"></script>
+
+  <base href="/">  
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="container">
-            <div class="logo">My portfolio</div>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </div>
-    </nav>
+  <app-root></app-root>
+  <!-- Navigation -->
+  <nav id="navbar">
+      <div class="container">
+          <div class="logo">My portfolio</div>
+          <ul class="nav-links">
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+      </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span>Nihal Adhikari</span></h1>
-                <h2>A Web Developer</h2>
-                <!-- <p>Passion for building dynamic, user-friendly websites and applications. I specialize in front-end and back-end technologies, crafting seamless and responsive digital experiences to meet client needs and enhance user engagement.</p> -->
-                <p>Combining creativity with code to build web applications that are not only visually appealing but also fast, accessible and optimized for the best user experience.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/nihal-adhikari-93511116a" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:nihaladhikari998@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-placeholder">
-                    <img src="assets\images\_DSC0014.JPG" alt="Profile picture" class="profile-picture">
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+      <div class="container">
+          <div class="hero-content">
+              <h1>Hi, I'm <span>Nihal Adhikari</span></h1>
+              <h2>A Web Developer</h2>
+              <!-- <p>Passion for building dynamic, user-friendly websites and applications. I specialize in front-end and back-end technologies, crafting seamless and responsive digital experiences to meet client needs and enhance user engagement.</p> -->
+              <p>Combining creativity with code to build web applications that are not only visually appealing but also fast, accessible and optimized for the best user experience.</p>
+              <div class="hero-buttons">
+                  <a href="#projects" class="btn btn-primary">View My Work</a>
+                  <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+              </div>
+              <div class="social-links">
+                  <a href="https://www.linkedin.com/in/nihal-adhikari-93511116a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="mailto:nihaladhikari998@gmail.com"><i class="fas fa-envelope"></i></a>
+              </div>
+          </div>
+          <div class="hero-image">
+              <div class="profile-placeholder">
+                  <img src="./assets/images/_DSC0014.JPG"  alt="Profile picture" class="profile-picture">
+              </div>
+          </div>
+      </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section-padding">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Web Developer with almost 3 years of experience specializing in Angular, TypeScript, and JavaScript. Proven expertise in building scalable web applications, implementing responsive designs, and integrating RESTful APIs.</p>
-                    <p>Skilled in API testing, performance optimization, and cross-functional collaboration. Adept at delivering high-quality, user-friendly solutions in agile environments. Passionate about learning new technologies and solving complex problems.</p>
-                    <p>I have a Bachelor's degree in Computer Science and Engineering from Graphic Era Hill University, Dehradun, and I'm constantly exploring new technologies to enhance my skill set.</p>
-                </div>
-                <div class="about-details">
-                    <div class="detail-item">
-                        <span class="detail-icon"><i class="fas fa-envelope"></i></span>
-                        <span class="detail-text">nihaladhikari998@gmail.com</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-icon"><i class="fas fa-phone"></i></span>
-                        <span class="detail-text">+91-8794330609</span>
-                    </div>
-                    <!-- <div class="detail-item">
-                        <span class="detail-icon"><i class="fas fa-map-marker-alt"></i></span>
-                        <span class="detail-text">Chandigarh, India</span>
-                    </div> -->
-                    <div class="detail-item">
-                        <span class="detail-icon"><i class="fas fa-graduation-cap"></i></span>
-                        <span class="detail-text">B.Tech in Computer Science</span>
-                    </div>
-                </div>
-                <a href="resume_NihalAdhikari.pdf" class="btn btn-primary download-resume" download>Download Resume</a>
-            </div>
-        </div>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="about section-padding">
+      <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+              <div class="about-text">
+                  <p>Web Developer with almost 3 years of experience specializing in Angular, TypeScript, and JavaScript. Proven expertise in building scalable web applications, implementing responsive designs, and integrating RESTful APIs.</p>
+                  <p>Skilled in API testing, performance optimization, and cross-functional collaboration. Adept at delivering high-quality, user-friendly solutions in agile environments. Passionate about learning new technologies and solving complex problems.</p>
+                  <p>I have a Bachelor's degree in Computer Science and Engineering from Graphic Era Hill University, Dehradun, and I'm constantly exploring new technologies to enhance my skill set.</p>
+              </div>
+              <div class="about-details">
+                  <div class="detail-item">
+                      <span class="detail-icon"><i class="fas fa-envelope"></i></span>
+                      <span class="detail-text">nihaladhikari998@gmail.com</span>
+                  </div>
+                  <div class="detail-item">
+                      <span class="detail-icon"><i class="fas fa-phone"></i></span>
+                      <span class="detail-text">+91-8794330609</span>
+                  </div>
+                  <!-- <div class="detail-item">
+                      <span class="detail-icon"><i class="fas fa-map-marker-alt"></i></span>
+                      <span class="detail-text">Chandigarh, India</span>
+                  </div> -->
+                  <div class="detail-item">
+                      <span class="detail-icon"><i class="fas fa-graduation-cap"></i></span>
+                      <span class="detail-text">B.Tech in Computer Science</span>
+                  </div>
+              </div>
+              <a href="resume_NihalAdhikari.pdf" class="btn btn-primary download-resume" download>Download Resume</a>
+          </div>
+      </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section-padding">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Language</h3>
-                    <div class="skill-grid">
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-js"></i></div>
-                            <h4>JavaScript</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                            <h4>HTML5</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-                            <h4>CSS3</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
-                            <h4>TypeScript</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-java"></i></div>
-                            <h4>Java</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-database"></i></div>
-                            <h4>SQL</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-python"></i></div>
-                            <h4>Python</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>                        
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-code"></i></div>
-                            <h4>C++</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Frameworks, Libraries & Tools</h3>
-                    <div class="skill-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-angular"></i></div>
-                            <h4>Angular</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-leaf"></i></div>
-                            <h4>Spring Boot</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
-                            <h4>Git</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-github"></i></div>
-                            <h4>GitHub</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-code"></i></div>
-                            <h4>VS Code</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-exchange-alt"></i></div>
-                            <h4>RESTful APIs</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-clipboard-list"></i></div>
-                            <h4>Jira</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
-                            <h4>Anaconda</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-plug"></i></div>
-                            <h4>Postman</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills" class="skills section-padding">
+      <div class="container">
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="skills-container">
+              <div class="skill-category">
+                  <h3>Language</h3>
+                  <div class="skill-grid">
+                      
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fab fa-js"></i></div>
+                          <h4>JavaScript</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 85%"></div>
+                          </div>
+                      </div>
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                          <h4>HTML5</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 95%"></div>
+                          </div>
+                      </div>
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                          <h4>CSS3</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 90%"></div>
+                          </div>
+                      </div>
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                          <h4>TypeScript</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 88%"></div>
+                          </div>
+                      </div>
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fab fa-java"></i></div>
+                          <h4>Java</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 75%"></div>
+                          </div>
+                      </div>
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fas fa-database"></i></div>
+                          <h4>SQL</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 80%"></div>
+                          </div>
+                      </div>
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fab fa-python"></i></div>
+                          <h4>Python</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 85%"></div>
+                          </div>
+                      </div>                        
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fas fa-code"></i></div>
+                          <h4>C++</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 75%"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill-category">
+                  <h3>Frameworks, Libraries & Tools</h3>
+                  <div class="skill-grid">
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fab fa-angular"></i></div>
+                          <h4>Angular</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 90%"></div>
+                          </div>
+                      </div>
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+                          <h4>Spring Boot</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 70%"></div>
+                          </div>
+                      </div>
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                          <h4>Git</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 85%"></div>
+                          </div>
+                      </div>
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fab fa-github"></i></div>
+                          <h4>GitHub</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 90%"></div>
+                          </div>
+                      </div>
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fas fa-code"></i></div>
+                          <h4>VS Code</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 92%"></div>
+                          </div>
+                      </div>
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fas fa-exchange-alt"></i></div>
+                          <h4>RESTful APIs</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 88%"></div>
+                          </div>
+                      </div>
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fas fa-clipboard-list"></i></div>
+                          <h4>Jira</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 88%"></div>
+                          </div>
+                      </div>
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                          <h4>Anaconda</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 75%"></div>
+                          </div>
+                      </div>
+                      <div class="skill-item">
+                          <div class="skill-icon"><i class="fas fa-plug"></i></div>
+                          <h4>Postman</h4>
+                          <div class="skill-bar">
+                              <div class="skill-progress" style="width: 85%"></div>
+                          </div>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience section-padding">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>System Engineer</h3>
-                        <h4>Infosys, Chandigarh</h4>
-                        <p class="timeline-date">July 2022 – Nov 2024</p>
-                        <ul class="timeline-responsibilities">
-                            <li>Developed and maintained multiple Angular applications using TypeScript resulting in a 25% increase in user engagement.</li>
-                            <li>Designed and implemented reusable Angular components and services, improving code maintainability by 30%.</li>
-                            <li>Integrated RESTful APIs and implemented error handling mechanisms, reducing data retrieval time by 15%.</li>
-                            <li>Conducted thorough API testing using Postman, resolving 95% of cross-browser compatibility issues.</li>
-                            <li>Improved application performance through code optimization and best practices implementation.</li>
-                            <li>Identified and fixed critical bugs through systematic debugging and code review processes.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Internship</h3>
-                        <h4>Infosys</h4>
-                        <p class="timeline-date">Feb 2022 – May 2022</p>
-                        <ul class="timeline-responsibilities">
-                            <li>Gained hands-on experience with microservices communication patterns and containerization.</li>
-                            <li>Developed a full-stack e-commerce web application using microservices architecture, Angular for the frontend, and Spring Boot for the backend.</li>
-                            <li>Participated in agile development processes, including daily stand-ups and sprint planning.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Experience Section -->
+  <section id="experience" class="experience section-padding">
+      <div class="container">
+          <h2 class="section-title">Work Experience</h2>
+          <div class="timeline">
+              <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                      <h3>System Engineer</h3>
+                      <h4>Infosys, Chandigarh</h4>
+                      <p class="timeline-date">July 2022 – Nov 2024</p>
+                      <ul class="timeline-responsibilities">
+                          <li>Developed and maintained multiple Angular applications using TypeScript resulting in a 25% increase in user engagement.</li>
+                          <li>Designed and implemented reusable Angular components and services, improving code maintainability by 30%.</li>
+                          <li>Integrated RESTful APIs and implemented error handling mechanisms, reducing data retrieval time by 15%.</li>
+                          <li>Conducted thorough API testing using Postman, resolving 95% of cross-browser compatibility issues.</li>
+                          <li>Improved application performance through code optimization and best practices implementation.</li>
+                          <li>Identified and fixed critical bugs through systematic debugging and code review processes.</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                      <h3>Internship</h3>
+                      <h4>Infosys</h4>
+                      <p class="timeline-date">Feb 2022 – May 2022</p>
+                      <ul class="timeline-responsibilities">
+                          <li>Gained hands-on experience with microservices communication patterns and containerization.</li>
+                          <li>Developed a full-stack e-commerce web application using microservices architecture, Angular for the frontend, and Spring Boot for the backend.</li>
+                          <li>Participated in agile development processes, including daily stand-ups and sprint planning.</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects section-padding">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>E-commerce Web Application</h3>
-                        <p>Developed an e-commerce solution using microservices architecture, Angular for the frontend, and Spring Boot for the backend.</p>
-                        <!-- <div class="project-tech">
-                            <span>Angular</span>
-                            <span>TypeScript</span>
-                            <span>Spring Boot</span>
-                            <span>Microservices</span>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fab fa-twitter"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>Twitter Sentiment Analysis</h3>
-                        <p>Developed text mining techniques to analyze tweet sentiments (positive, negative, neutral). Implemented machine learning algorithms for sentiment classification.</p>
-                        <!-- <div class="project-tech">
-                            <span>Python</span>
-                            <span>ML</span>
-                            <span>Data Mining</span>
-                            <span>NLP</span>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>Android Chat Application</h3>
-                        <p>Developed a Wi-Fi Direct-based peer-to-peer chat application for offline communication. Achieved a 95% user satisfaction rate based on post-launch surveys.</p>
-                        <!-- <div class="project-tech">
-                            <span>Android</span>
-                            <span>Java</span>
-                            <span>Wi-Fi Direct</span>
-                            <span>P2P</span>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>Interactive Dashboard</h3>
-                        <p>Developed a responsive data visualization dashboard with interactive charts and real-time metrics. Features time-based filtering and customizable data views with dynamic updates.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects" class="projects section-padding">
+      <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+              <div class="project-card">
+                  <div class="project-img">
+                      <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <div class="project-info">
+                      <h3>E-commerce Web Application</h3>
+                      <p>Developed an e-commerce solution using microservices architecture, Angular for the frontend, and Spring Boot for the backend.</p>
+                      <!-- <div class="project-tech">
+                          <span>Angular</span>
+                          <span>TypeScript</span>
+                          <span>Spring Boot</span>
+                          <span>Microservices</span>
+                      </div> -->
+                  </div>
+              </div>
+              <div class="project-card">
+                  <div class="project-img">
+                      <i class="fab fa-twitter"></i>
+                  </div>
+                  <div class="project-info">
+                      <h3>Twitter Sentiment Analysis</h3>
+                      <p>Developed text mining techniques to analyze tweet sentiments (positive, negative, neutral). Implemented machine learning algorithms for sentiment classification.</p>
+                      <!-- <div class="project-tech">
+                          <span>Python</span>
+                          <span>ML</span>
+                          <span>Data Mining</span>
+                          <span>NLP</span>
+                      </div> -->
+                  </div>
+              </div>
+              <div class="project-card">
+                  <div class="project-img">
+                      <i class="fas fa-comments"></i>
+                  </div>
+                  <div class="project-info">
+                      <h3>Android Chat Application</h3>
+                      <p>Developed a Wi-Fi Direct-based peer-to-peer chat application for offline communication. Achieved a 95% user satisfaction rate based on post-launch surveys.</p>
+                      <!-- <div class="project-tech">
+                          <span>Android</span>
+                          <span>Java</span>
+                          <span>Wi-Fi Direct</span>
+                          <span>P2P</span>
+                      </div> -->
+                  </div>
+              </div>
+              <div class="project-card">
+                  <div class="project-img">
+                      <i class="fas fa-chart-line"></i>
+                  </div>
+                  <div class="project-info">
+                      <h3>Interactive Dashboard</h3>
+                      <p>Developed a responsive data visualization dashboard with interactive charts and real-time metrics. Features time-based filtering and customizable data views with dynamic updates.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section-padding">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <!-- <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Location</h3>
-                            <p>Chandigarh, India</p>
-                        </div>
-                    </div> -->
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <!-- <h3>Email</h3> -->
-                            <p class="Lp"><a href="mailto:nihaladhikari998@gmail.com" target="_blank">nihaladhikari998@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <!-- <h3>Phone</h3> -->
-                            <p class="Lp">+91-8794330609</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <div class="contact-text">
-                            <!-- <h3>LinkedIn</h3> -->
-                            <p class="Lp"><a href="https://www.linkedin.com/in/nihal-adhikari-93511116a" target="_blank">Nihal Adhikari</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact section-padding">
+      <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-content">
+              <div class="contact-info">
+                  <!-- <div class="contact-item">
+                      <div class="contact-icon">
+                          <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="contact-text">
+                          <h3>Location</h3>
+                          <p>Chandigarh, India</p>
+                      </div>
+                  </div> -->
+                  <div class="contact-item">
+                      <div class="contact-icon">
+                          <i class="fas fa-envelope"></i>
+                      </div>
+                      <div class="contact-text">
+                          <!-- <h3>Email</h3> -->
+                          <p class="Lp"><a href="mailto:nihaladhikari998@gmail.com" target="_blank">nihaladhikari998@gmail.com</a></p>
+                      </div>
+                  </div>
+                  <div class="contact-item">
+                      <div class="contact-icon">
+                          <i class="fas fa-phone"></i>
+                      </div>
+                      <div class="contact-text">
+                          <!-- <h3>Phone</h3> -->
+                          <p class="Lp">+91-8794330609</p>
+                      </div>
+                  </div>
+                  <div class="contact-item">
+                      <div class="contact-icon">
+                          <i class="fab fa-linkedin"></i>
+                      </div>
+                      <div class="contact-text">
+                          <!-- <h3>LinkedIn</h3> -->
+                          <p class="Lp"><a href="https://www.linkedin.com/in/nihal-adhikari-93511116a" target="_blank">Nihal Adhikari</a></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="contact-form">
+                  <form id="contactForm">
+                      <div class="form-group">
+                          <input type="text" id="name" name="name" placeholder="Your Name" required>
+                      </div>
+                      <div class="form-group">
+                          <input type="email" id="email" name="email" placeholder="Your Email" required>
+                      </div>
+                      <!-- <div class="form-group">
+                          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                      </div> -->
+                      <div class="form-group">
+                          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                      </div>
+                      <button id="submit-btn" type="submit" class="btn btn-primary">Send Message</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Nihal Adhikari. All Rights Reserved.</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/nihal-adhikari-93511116a" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Nihalad998" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:nihaladhikari998@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer>
+      <div class="container">
+          <div class="footer-content">
+              <p>&copy; 2025 Nihal Adhikari. All Rights Reserved.</p>
+              <div class="social-links">
+                  <a href="https://www.linkedin.com/in/nihal-adhikari-93511116a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/Nihalad998" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="mailto:nihaladhikari998@gmail.com"><i class="fas fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- <script type="module" src="scripts.js"></script> -->
+  <script src="./assets/scripts.js" type="module"></script>
 
-    <script src="scripts.js"></script>
 </body>
 </html>
