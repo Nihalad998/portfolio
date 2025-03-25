@@ -63,27 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('touchend', () => {
             card.classList.remove('touched');
         });
-    });
-
-    // const firebaseConfig = {
-    //     apiKey: "AIzaSyBRzAPr7ofWqlCt8MOiUMOHcbvGgmqiz3s",
-    //     authDomain: "contact-form-portfolio-4c127.firebaseapp.com",
-    //     projectId: "contact-form-portfolio-4c127",
-    //     storageBucket: "contact-form-portfolio-4c127.firebasestorage.app",
-    //     messagingSenderId: "60876468756",
-    //     appId: "1:60876468756:web:2eb1cd51eccf78cf0aad01",
-    //     measurementId: "G-3Q3S5LL7GS",
-    //     databaseURL: "https://contact-form-portfolio-4c127-default-rtdb.asia-southeast1.firebasedatabase.app"
-    // };
-      
-    // // Initialize Firebase
-    // if (!firebase.apps.length) {
-    //     firebase.initializeApp(firebaseConfig);
-    // }
-    // const database = firebase.database();
-      
-       
-
+    });  
 });
 
 const firebaseConfig = {
