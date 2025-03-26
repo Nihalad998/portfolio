@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     const navbar = document.getElementById('navbar');
@@ -67,14 +67,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBRzAPr7ofWqlCt8MOiUMOHcbvGgmqiz3s",
-    authDomain: "contact-form-portfolio-4c127.firebaseapp.com",
-    projectId: "contact-form-portfolio-4c127",
-    storageBucket: "contact-form-portfolio-4c127.firebasestorage.app",
-    messagingSenderId: "60876468756",
-    appId: "1:60876468756:web:2eb1cd51eccf78cf0aad01",
-    measurementId: "G-3Q3S5LL7GS",
-    databaseURL: "https://contact-form-portfolio-4c127-default-rtdb.asia-southeast1.firebasedatabase.app"
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID"
 };
   
 // Initialize Firebase
